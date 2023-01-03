@@ -14,11 +14,12 @@ int check_cycle(listint_t *list)
 {
 	listint_t *init = list, *final = list;
 
-	do {
+	while (init && final && final->next)
+	{
 		init = init->next, final = final->next->next;
 		if (init == final)
 			return (1);
-	} while (init && final && final->next);
+	}
 
 	return (0);
 }
