@@ -3,7 +3,7 @@
 ## General Idea
 
 ```python
-	#!/bin/python3
+	#!/usr/bin/python3
 
 	import pycodestyle as pcs
 
