@@ -6,4 +6,4 @@ def uppercase(str):
         if ch in range(97, 123):
             ch -= 32
         upper += chr(ch)
-    print(f"{upper:s}")
+    print("{:s}".format(upper))
