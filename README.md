@@ -33,6 +33,7 @@ Here are the contents of the repo:
 | Description | File count | Description |
 | -- | -- | -- |
 | [0x00-python-hello_world](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x00-python-hello_world) | 13 | -*Introduction to Python* |
+| [0x01-python-if_else_loops_functions](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x01-python-if_else_loops_functions) | 15 | -*Introduction to Conditional statements, Loops and Functions in Python* |
 
 ## Sidebar
 
