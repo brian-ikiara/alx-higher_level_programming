@@ -8,11 +8,6 @@ else:
     div = -10
 # Store last digit as ldig
 ldig = number % div
-# Handle negative values of ldig
-if ldig < 0:
-    ldig *= -1
-else:
-    ldig = ldig
 # Perform the necessary conditions
 if ldig > 5:
     print(f"Last digit of {number:d} is {ldig:d} and is greater than 5")
