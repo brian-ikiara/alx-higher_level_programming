@@ -4,5 +4,5 @@ def remove_char_at(str, n):
     for ch in range(0, len(str)):
         if ch == n:
             continue
-        s += str[i]
+        s += str[ch]
     return s
