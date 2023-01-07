@@ -1,11 +1,6 @@
 #!/usr/bin/python3
-"""
-    Begin:
-        Import variable_load_5 as varLoad
-        Print varLoad.a using str.format()
-    End
-"""
-import variable_load_5 as varLoad
+from sys import argv
+from variable_load_5 import a
 
 if __name__ == "__main__":
-    print("{}".format(varLoad.a))
+    print("{:d}".format(a))
