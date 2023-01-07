@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Import the sys module
-import sys
+from sys import argv
 """ 
     Initialize l as length of sys.argv
     Check if length of sys.argv is not zero
@@ -9,13 +9,13 @@ import sys
     zero
 """
 i = 1
-l = len(sys.argv)
+l = len(argv)
 if l != 1:
     if l > 2:
         print("{} arguments:".format(l - 1))
     else:
         print("{} argument:".format(l - 1))
-    for c in sys.argv[1:]:
+    for c in argv[1:]:
         print("{}: {}".format(i, c))
         i += 1
 else:
