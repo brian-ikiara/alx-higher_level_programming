@@ -28,7 +28,7 @@ _Commandline Arguments_
 
 ## Interesting questions
 
-*What does the* <code>if __name__ == "__main__"</code> *do?*
+*What does the* <code>if \_\_name\_\_ == "\_\_main\_\_"</code> *do?*
 
 > Before executing code, Python interpreter reads source file and define few special variables/global variables. If the python interpreter is running that module (the source file) as the main program, it sets the special __name__ variable to have a value “__main__”. If this file is being imported from another module, __name__ will be set to the module’s name. Module’s name is available as value to __name__ global variable.([GeeksForGeeks](https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/))
 
