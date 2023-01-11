@@ -5,7 +5,7 @@ from calculator_1 import add, sub, mul, div
 lenArgs = len(sys.argv)
 
 if __name__ == "__main__":
-    if (lenArgs - 1) != 3:
+    if (lenArgs - 1) is not 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     else:
