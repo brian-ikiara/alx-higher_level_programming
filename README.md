@@ -36,6 +36,7 @@ Here are the contents of the repo:
 | [0x01-python-if_else_loops_functions](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x01-python-if_else_loops_functions) | 15 | -*Introduction to Conditional statements, Loops and Functions in Python* |
 | [0x02-python-import_modules](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x02-python-import_modules) | 11 | -*Introduction to Python Data structures* |
 | [0x03-python-data_structures](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x03-python-data_structures) | 16 | -*Introduction to Python Data structures* |
+| [0x04-python-more_data_structures](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x04-python-more_data_structures) | 14 | -*More on Python Data Structures* |
 
 ## Sidebar
 
