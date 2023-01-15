@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def subza(idx):
-    res, max_idx = 0, max(idx)
+    res = 0
+    max_idx = max(idx)
 
     for i in idx:
         if max_idx > i:
@@ -14,9 +15,11 @@ def roman_to_int(roman_string):
     if not isinstance(roman_string, str):
         return 0
     romans = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    keys = list(romans)
+    keys = list(romans.keys())
 
-    num, last, idx = 0, 0, [0]
+    num = 0
+    last = 0
+    idx = [0]
 
     for ch in roman_string:
         for r in keys:
