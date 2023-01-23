@@ -2,7 +2,7 @@
 
 ## General Idea
 
-```bash
+```python
 	vagrant@ubuntu-focal:~/0x05$ python3
 	Python 3.8.10 (default, Nov 14 2022, 12:59:47)
 	[GCC 9.4.0] on linux
