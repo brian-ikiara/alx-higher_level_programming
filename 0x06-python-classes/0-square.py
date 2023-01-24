@@ -12,6 +12,7 @@ Example:
 
 """
 
+
 class Square:
     """Represents a square.
 
