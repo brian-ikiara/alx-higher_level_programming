@@ -22,4 +22,5 @@ class Square:
         none
 
     """
+
     pass
