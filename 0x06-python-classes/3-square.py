@@ -8,6 +8,9 @@ class Square:
     Demonstrates the various operations that can be performed on
     a square such as Area.
 
+    Attributes:
+        size: Square's size.
+
     """
 
     def __init__(self, size=0):
