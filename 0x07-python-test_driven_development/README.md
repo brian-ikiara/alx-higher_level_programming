@@ -147,7 +147,7 @@ Let's view this in a table:
 | Regression | *Compound effect of updates* | Verifies whether debugging might have affected other components in the system |
 | Acceptance | *Client satisfaction*, *Publicity* | Checks whether the Client's specifications have been met and the likelihood of the product getting embraced by the public |
 | Alpha | *Typos*, *LowSpec performance*, *Algorithm* | First stage of testing that combines Unit, Integration and System testing |
-| Beta | ** | A.K.A *Pre-release testing*; Where a sample of the intended audience is given a demo/beta of the product to run tests on it |
+| Beta | *General Performance*, *Market readiness* | A.K.A *Pre-release testing*; Where a sample of the intended audience is given a demo/beta of the product to run tests on it |
 | Non-functional | *Performance*[^2], *Load*[^3], *Stress*[^4] | Also known as *White box* testing; this is the evaluation of the system's non-functional attributes such as *security*[^5], *UI & usability*[^6], *portability* e.t.c. |
 
 [^2]: Performance testing is considered mandatory and it involves the following metrics: *Speed*, *Capacity*, *Stability* and *Scalability*
