@@ -22,8 +22,8 @@
 
 > Instance variables defined within the class. Are of two main types:
 
-* *Class attributes*: Are variables defined within the class and are not within a method and can be used throughout the class by any object
-* *Instance attributes*: Are variables defined within methods and can't be used by other objects in the class.
+* *Class attributes*: Are variables defined within the class and are not within a method and can be used throughout the class by any object. Defined as follows: `cls.var`(*for public*) & `cls.__var`(*for private*)
+* *Instance attributes*: Are variables defined within methods and can't be used by other objects in the class. Defined as follows: `self.var`(*for public*) & `self.__var`(*for private*)
 
 [^1]: In C, we use this a lot in Linked lists and other numerous implementations.
 
@@ -31,38 +31,38 @@
 
 ```python
 	#!/usr/bin/python3
-	"""Demonstrates the working of a class.
+	"""demonstrates the working of a class.
 	
-	We'll be demonstrating how we can define our own 'data types', for
-	example, we'll be defining the Dog data type.
+	we'll be demonstrating how we can define our own 'data types', for
+	example, we'll be defining the dog data type.
 
 	"""
 
 
-	class Doggo:
-	    """Represents a real life dog."""
+	class doggo:
+	    """represents a real life dog."""
 
-	    dog_count = 0
+	    doggos = 0
 
 	    def __init__(self, name, age):
-		"""Instantiate the name, age & breed attributes.
+		"""instantiate the name, age & breed attributes.
 
-		Args:
-		    name (str): Dog's name
-		    age (int): Dog's age
+		args:
+		    name (str): dog's name
+		    age (int): dog's age
 
 		"""
-		# Public instance attribute
+		# public instance attribute
 		self.name = name
-		# Private instance attribute
+		# private instance attribute
 		self.__age = age
 	    
 	    @property
 	    def age(self):
-		"""Get the dog's age.
+		"""get the dog's age.
 
-		The '@property' is known as a decorator. It declares this
-		method as a getter function. Utilized by private instance
+		the '@property' is known as a decorator. it declares this
+		method as a getter function. utilized by private instance
 		attributes when a specific value is required.
 
 		"""
@@ -70,32 +70,37 @@
 	    
 	    @age.setter
 	    def age(self, years):
-		"""Set the dog's age.
+		"""set the dog's age.
 		
-		The '@age.setter' declares this method as a setter function,
-		it's a decorator too. Assigns a value to the private instance
+		the '@age.setter' declares this method as a setter function,
+		it's a decorator too. assigns a value to the private instance
 		attribute that meets the criteria specified here.
 
-		Args:
-		    years (int): Age in Dog years.
+		args:
+		    years (int): age in dog years.
 
 		"""
 		if isinstance(years, int):
 		    if years < 0:
-		        raise ValueError("Your dog is too young!")
+		        raise valueerror("your dog is too young!")
 		    if years > 30:
-		        raise ValueError("Your dog is too old. Contact Guinness World Records")
+		        raise valueerror("your dog is too old. contact guinness world records")
 		    self.__age = years
-		    dog_count += 1
+		    doggos += 1
 		else:
-		    raise TypeError("Age should be a number")
+		    raise typeerror("age should be a number")
 
 	    def print_doggo(self):
-		"""Print the dog(s) info."""
-		if dog_count > 0:
-		    for i in range(dog_count + 1):
-		    	print("This is Dog #{:d}. The dog's name is {} and they're {:d} years old".format(i, self.name, self.__age))
+		"""print the dog(s) info."""
+		print("this is doggo #{:d}".format(doggos, end=" ")
+		print("they're called {}".format(self.name), end=" ")
+		print("and they're {:d} years old.".format(self.__age))
 
+	if __name__ == "__main__":
+	    dog1 = doggo("butter", 5)
+	    doggo.print_doggo()
+	    dog2 = doggo("dodge", 6)
+	    doggo.print_doggo()
 ```
 
 ## Sidebar
