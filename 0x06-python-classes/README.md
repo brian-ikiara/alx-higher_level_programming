@@ -42,8 +42,6 @@
 	class Doggo:
 	    """Represents a real life dog."""
 
-	    doggos = 0
-
 	    def __init__(self, name, age):
 		"""Instantiate the name, age & breed attributes.
 
@@ -52,9 +50,9 @@
 		    age (int): dog's age
 
 		"""
-		# public instance attribute
+		# Public instance attribute
 		self.name = name
-		# private instance attribute
+		# Private instance attribute
 		self.__age = age
 	    
 	    @property
@@ -84,22 +82,21 @@
 		    if years < 0:
 		        raise ValueError("Your dog is too young!")
 		    if years > 30:
-		        raise ValueError("Your dog is too old. contact guinness world records")
+		        raise ValueError("Your dog is too old.")
 		    self.__age = years
-		    doggos += 1
 		else:
 		    raise TypeError("Age should be a number")
 
 	    def print_doggo(self):
 		"""Print the Doggo's info."""
-		print("This is Doggo #{:d}".format(doggos, end=" ")
 		print("They're called {}".format(self.name), end=" ")
 		print("and they're {:d} years old.".format(self.__age))
 
+
 	if __name__ == "__main__":
-	    dog1 = Doggo("Butter", 5)
+	    Doggo("Butter", 5)
 	    Doggo.print_doggo()
-	    dog2 = doggo("dodge", 6)
+	    Doggo("Dodge", 6)
 	    Doggo.print_doggo()
 ```
 
