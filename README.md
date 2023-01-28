@@ -38,7 +38,7 @@ Here are the contents of the repo:
 | [0x03-python-data_structures](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x03-python-data_structures) | 16 | -*Introduction to Python Data structures* |
 | [0x04-python-more_data_structures](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x04-python-more_data_structures) | 14 | -*More on Python Data Structures* |
 | [0x05-python-exceptions](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x05-python-exceptions) | 10 | -*Introduction to Error Handling in Python* |
-| [0x06-python-classes](https://github.com/brian-ikiara/alx-higher_level_programming/    tree/main/0x06-python-classes) | 11 | -*Introduction to OOP* |
+| [0x06-python-classes](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x06-python-classes) | 11 | -*Introduction to OOP* |
 | [0x07-python-test_driven_development](https://github.com/brian-ikiara/alx-higher_level_programming/tree/main/0x07-python-test_driven_development) | 12 | -*Introduction to TDD(Test Driven Development)* |
 
 ## Sidebar
