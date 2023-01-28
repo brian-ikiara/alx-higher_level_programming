@@ -31,23 +31,23 @@
 
 ```python
 	#!/usr/bin/python3
-	"""demonstrates the working of a class.
+	"""Demonstrates the working of a class.
 	
-	we'll be demonstrating how we can define our own 'data types', for
+	We'll be demonstrating how we can define our own 'data types', for
 	example, we'll be defining the dog data type.
 
 	"""
 
 
-	class doggo:
-	    """represents a real life dog."""
+	class Doggo:
+	    """Represents a real life dog."""
 
 	    doggos = 0
 
 	    def __init__(self, name, age):
-		"""instantiate the name, age & breed attributes.
+		"""Instantiate the name, age & breed attributes.
 
-		args:
+		Args:
 		    name (str): dog's name
 		    age (int): dog's age
 
@@ -59,10 +59,10 @@
 	    
 	    @property
 	    def age(self):
-		"""get the dog's age.
+		"""Get the dog's age.
 
-		the '@property' is known as a decorator. it declares this
-		method as a getter function. utilized by private instance
+		The '@property' is known as a decorator. it declares this
+		method as a getter function. Utilized by private instance
 		attributes when a specific value is required.
 
 		"""
@@ -70,35 +70,35 @@
 	    
 	    @age.setter
 	    def age(self, years):
-		"""set the dog's age.
+		"""Set the dog's age.
 		
-		the '@age.setter' declares this method as a setter function,
-		it's a decorator too. assigns a value to the private instance
+		The '@age.setter' declares this method as a setter function,
+		it's a decorator too. Assigns a value to the private instance
 		attribute that meets the criteria specified here.
 
-		args:
+		Args:
 		    years (int): age in dog years.
 
 		"""
 		if isinstance(years, int):
 		    if years < 0:
-		        raise valueerror("your dog is too young!")
+		        raise ValueError("Your dog is too young!")
 		    if years > 30:
-		        raise valueerror("your dog is too old. contact guinness world records")
+		        raise ValueError("Your dog is too old. contact guinness world records")
 		    self.__age = years
 		    doggos += 1
 		else:
-		    raise typeerror("age should be a number")
+		    raise TypeError("Age should be a number")
 
 	    def print_doggo(self):
-		"""print the dog(s) info."""
-		print("this is doggo #{:d}".format(doggos, end=" ")
-		print("they're called {}".format(self.name), end=" ")
+		"""Print the Doggo's info."""
+		print("This is Doggo #{:d}".format(doggos, end=" ")
+		print("They're called {}".format(self.name), end=" ")
 		print("and they're {:d} years old.".format(self.__age))
 
 	if __name__ == "__main__":
-	    dog1 = doggo("butter", 5)
-	    doggo.print_doggo()
+	    dog1 = Doggo("Butter", 5)
+	    Doggo.print_doggo()
 	    dog2 = doggo("dodge", 6)
 	    doggo.print_doggo()
 ```
