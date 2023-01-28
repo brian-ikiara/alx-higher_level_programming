@@ -100,7 +100,7 @@
 	    dog1 = Doggo("Butter", 5)
 	    Doggo.print_doggo()
 	    dog2 = doggo("dodge", 6)
-	    doggo.print_doggo()
+	    Doggo.print_doggo()
 ```
 
 ## Sidebar
