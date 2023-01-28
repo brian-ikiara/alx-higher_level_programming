@@ -155,7 +155,7 @@ Let's view this in a table:
 [^4]: Stress can be in the form of randomly inaccessible ports, high CPU, Memory, server usage e.t.c
 [^5]: Security in terms of the C.I.A(*Confidentiality, Integrity Availability*) InfoSec Triad
 [^6]: UI testing is considered a subpart of Usability testing
-[^7]: j = sqrt(-1)
+[^7]: j = math.sqrt(-1)
 
 ## Sidebar
 
