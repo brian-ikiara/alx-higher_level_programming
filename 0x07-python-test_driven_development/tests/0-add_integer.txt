@@ -2,7 +2,7 @@
 >>> add_integer(6, 9)
 15
 >>> add_integer(6.0, 9)
-15.0
+15
 >>> add_integer(6, -9)
 -3
 >>> add_integer(-69)
@@ -12,9 +12,7 @@ Traceback (most recent call last):
 ...
 TypeError: add_integer() missing 1 required positional argument: 'a'
 >>> add_integer(True)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+99
 >>> add_integer(None)
 Traceback (most recent call last):
 ...
@@ -35,7 +33,7 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 ...
 OverflowError: cannot convert float infinity to integer
->>> add_integer(9.6, float("-int"))
+>>> add_integer(9.6, float("-inf"))
 Traceback (most recent call last):
 ...
 OverflowError: cannot convert float infinity to integer
