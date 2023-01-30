@@ -94,10 +94,16 @@ class Rectangle:
         return 0
 
     def __str__(self):
-        """Print a square of a given dimension."""
+        """Print a square of a given dimension.
+
+        Returns:
+            An empty string
+
+        """
         if self.__width > 0 and self.__height > 0:
             for i in range(self.__height):
                 for j in range(self.__width):
                     print("#", end='')
                 print()
+            return str()
         return str()
