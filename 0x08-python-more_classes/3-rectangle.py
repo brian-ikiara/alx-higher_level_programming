@@ -105,5 +105,5 @@ class Rectangle:
                 for j in range(self.__width):
                     print("#", end='')
                 print()
+        else:
             return str()
-        return str()
