@@ -105,12 +105,12 @@ class Rectangle:
 
         """
         if self.__width > 0 and self.__height > 0:
-            rect = []
+            r = []
             for i in range(self.__height):
-                [rect.append(str(Rectangle.print_symbol)) for j in range(self.__width)]
+                [r.append(str(self.print_symbol)) for j in range(self.__width)]
                 if i != self.__height - 1:
-                    rect.append("\n")
-            return ("".join(rect))
+                    r.append("\n")
+            return ("".join(r))
         else:
             return str()
 
