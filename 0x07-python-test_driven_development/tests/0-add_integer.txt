@@ -1,47 +1,84 @@
->>> add_integer = __import__('0-add_integer').add_integer
->>> add_integer(6, 9)
-15
->>> add_integer(6.0, 9)
-15
->>> add_integer(6, -9)
--3
->>> add_integer(-69)
-29
->>> add_integer()
-Traceback (most recent call last):
-...
-TypeError: add_integer() missing 1 required positional argument: 'a'
->>> add_integer(True)
-99
->>> add_integer(None)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer(6.9, None)
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer('butter')
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer(4.20, 'dog')
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer(float("inf"))
-Traceback (most recent call last):
-...
-OverflowError: cannot convert float infinity to integer
->>> add_integer(9.6, float("-inf"))
-Traceback (most recent call last):
-...
-OverflowError: cannot convert float infinity to integer
->>> add_integer(float("NaN"))
-Traceback (most recent call last):
-...
-ValueError: cannot convert float NaN to integer
->>> add_integer(6.9, float("NaN"))
-Traceback (most recent call last):
-...
-ValueError: cannot convert float NaN to integer
+=====================
+Test 0-add_integer.py
+=====================
+
+Performs integer addition.
+
+=====
+Tests
+=====
+
+Import `add_integer()` from 0-add_integer:
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Case #1: No args passed:
+
+	>>> add_integer()
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Case #2: Integer addition:
+
+	>>> add_integer(6, 9)
+	15
+	>>> add_integer(6, -9)
+	-3
+	>>> add_integer(-69)
+	29
+
+Case #3: Float addition:
+
+	>>> add_integer(6.0, 9)
+	15
+
+Case #4: Boolean addition:
+
+	>>> add_integer(True)
+	99
+
+Case #5: Pure non-integers:
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+	>>> add_integer(6.9, None)
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+	>>> add_integer('butter')
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+	>>> add_integer(4.20, 'dog')
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+	>>> add_integer('butter', 'dog')
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Case #6: What about infinity?:
+
+	>>> add_integer(float("inf"))
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
+	>>> add_integer(9.6, float("-inf"))
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
+
+Case #7: What if it just isn't a number?:
+
+	>>> add_integer(float("NaN"))
+	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer
+	>>> add_integer(6.9, float("NaN"))
+	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer
