@@ -112,6 +112,28 @@ Case #3: Non-numerals assigned to MyList:
 	...
 	TypeError: '<' not supported between instances of 'str' and 'float'
 	>>> my_list = MyList()
+	>>> my_list.append(8.9)
+	>>> my_list.append(5)
+	>>> my_list.append(6)
+	>>> my_list.append(9)
+	>>> my_list.append(True)
+	>>> print(my_list)
+	[8.9, 5, 6, 9, True]
+	>>> my_list.print_sorted()
+	[True, 5, 6, 8.9, 9]
+	>>> ml = MyList()
+	>>> ml.append(8.9)
+	>>> ml.append(1)
+	>>> ml.append(5)
+	>>> ml.append(4)
+	>>> ml.append(None)
+	>>> print(ml)
+	[8.9, 1, 5, 4, None]
+	>>> ml.print_sorted()
+	Traceback (most recent call last):
+	...
+	TypeError: '<' not supported between instances of 'NoneType' and 'int'
+	>>> my_list = MyList()
 	>>> my_list.append([9, 6, 69])
 	>>> my_list.append(5)
 	>>> my_list.append(6)
