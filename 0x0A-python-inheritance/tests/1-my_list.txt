@@ -19,7 +19,10 @@ Case #1: MyList called without an object:
 	>>> my_list = MyList()
 	>>> print(my_list)
 	[]
-	>>>
+	>>> MyList([]).print_sorted()
+	[]
+	>>> my_list.print_sorted()
+	[]
 
 Case #2: Numbers assigned to MyList:
 
@@ -44,6 +47,8 @@ Case #2: Numbers assigned to MyList:
 	[8, 7, 1, 6, 9]
 	>>> my_list.print_sorted()
 	[1, 6, 7, 8, 9]
+	>>> print(my_list)
+	[8, 7, 1, 6, 9]
 	>>> my_list = MyList()
 	>>> my_list.append(2.4)
 	>>> my_list.append(1)
