@@ -15,5 +15,3 @@ def append_write(filename="", text=""):
     """
     with open(filename, 'a', encoding='UTF-8') as myFile:
         return myFile.write(text)
-
-append_write('3-my_file.txt', 'Butter Dog')
