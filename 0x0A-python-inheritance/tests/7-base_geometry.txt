@@ -124,6 +124,14 @@ Case #4: `value` is not exactly an integer:
 	Traceback (most recent call last):
 	...
 	TypeError: butter must be an integer
+	>>> BaseGeometry().integer_validator('butter', (1, 3, 5))
+	Traceback (most recent call last):
+	...
+	TypeError: butter must be an integer
+	>>> bg.integer_validator('butter', (1, 3, 5))
+	Traceback (most recent call last):
+	...
+	TypeError: butter must be an integer
 	>>> BaseGeometry().integer_validator('butter', [1, 3, 5])
 	Traceback (most recent call last):
 	...
