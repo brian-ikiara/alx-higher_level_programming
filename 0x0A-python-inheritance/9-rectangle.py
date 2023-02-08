@@ -49,7 +49,7 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Tell what print() should do.
-        
+
         Returns:
             A statement...
 
