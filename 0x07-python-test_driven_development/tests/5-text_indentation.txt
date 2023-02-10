@@ -29,7 +29,6 @@ Case #2: Text passed:
 
 	>>> text = "Hi, how are you? I am under the water."
 	>>> text_indentation(text)
-	<BLANKLINE>
 	Hi, how are you?
 	<BLANKLINE>
 	I am under the water.
