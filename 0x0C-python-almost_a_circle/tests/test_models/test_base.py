@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 """Defines unittests for base.py.
+
 Unittest classes:
     TestBase_instantiation - line 22
     TestBase_to_json_string - line 110
@@ -10,6 +10,7 @@ Unittest classes:
     TestBase_load_from_file - line 340
     TestBase_save_to_file_csv - line 406
     TestBase_load_from_file_csv - line 484
+
 """
 import os
 import unittest
